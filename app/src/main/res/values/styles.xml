@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="ArcView">
+        <attr format="dimension" name="shape_arc_height"/>
+        <attr format="enum" name="shape_arc_position">
+            <enum name="bottom" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="4"/>
+        </attr>
+        <attr format="enum" name="shape_arc_cropDirection">
+            <enum name="inside" value="1"/>
+            <enum name="outside" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="BubbleView">
+        <attr format="dimension" name="shape_bubble_borderRadius"/>
+        <attr format="dimension" name="shape_bubble_arrowHeight"/>
+        <attr format="dimension" name="shape_bubble_arrowWidth"/>
+        <attr format="enum" name="shape_bubble_arrowPosition">
+            <enum name="bottom" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="4"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircleView">
+        <attr format="dimension" name="shape_circle_borderWidth"/>
+        <attr format="color" name="shape_circle_borderColor"/>
+    </declare-styleable>
+    <declare-styleable name="CutCornerView">
+        <attr format="dimension" name="shape_cutCorner_topLeftSize"/>
+        <attr format="dimension" name="shape_cutCorner_topRightSize"/>
+        <attr format="dimension" name="shape_cutCorner_bottomLeftSize"/>
+        <attr format="dimension" name="shape_cutCorner_bottomRightSize"/>
+    </declare-styleable>
+    <declare-styleable name="DiagonalView">
+        <attr format="float" name="shape_diagonal_angle"/>
+        <attr format="enum" name="shape_diagonal_position">
+            <enum name="bottom" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="4"/>
+        </attr>
+        <attr format="enum" name="shape_diagonal_direction">
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="DottedEdgesCutCornerView">
+        <attr format="dimension" name="shape_dottedEdgesCutCorner_topLeftSize"/>
+        <attr format="dimension" name="shape_dottedEdgesCutCorner_topRightSize"/>
+        <attr format="dimension" name="shape_dottedEdgesCutCorner_bottomLeftSize"/>
+        <attr format="dimension" name="shape_dottedEdgesCutCorner_bottomRightSize"/>
+        <attr format="flags" name="shape_edge_position">
+            <flag name="none" value="0"/>
+            <flag name="bottom" value="1"/>
+            <flag name="top" value="2"/>
+            <flag name="left" value="4"/>
+            <flag name="right" value="8"/>
+            <flag name="all" value="15"/>
+        </attr>
+        <attr format="dimension" name="shape_dot_radius"/>
+        <attr format="dimension" name="shape_dot_spacing"/>
+    </declare-styleable>
+    <declare-styleable name="PolygonView">
+        <attr format="integer" name="shape_polygon_noOfSides"/>
+    </declare-styleable>
+    <declare-styleable name="RoundRectView">
+        <attr format="dimension" name="shape_roundRect_topLeftRadius"/>
+        <attr format="dimension" name="shape_roundRect_topRightRadius"/>
+        <attr format="dimension" name="shape_roundRect_bottomLeftRadius"/>
+        <attr format="dimension" name="shape_roundRect_bottomRightRadius"/>
+        <attr format="dimension" name="shape_roundRect_borderWidth"/>
+        <attr format="color" name="shape_roundRect_borderColor"/>
+    </declare-styleable>
+    <declare-styleable name="ShapeOfView">
+        <attr format="reference" name="shape_clip_drawable"/>
+    </declare-styleable>
+    <declare-styleable name="StarView">
+        <attr format="integer" name="shape_star_noOfPoints"/>
+    </declare-styleable>
+    <declare-styleable name="TriangleView">
+        <attr format="float" name="shape_triangle_percentLeft"/>
+        <attr format="float" name="shape_triangle_percentBottom"/>
+        <attr format="float" name="shape_triangle_percentRight"/>
+    </declare-styleable>
+
+</resources>
